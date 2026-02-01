@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff7fa;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #8b1d3d;
+}
+
+.nav-btn {
+  background: #8b1d3d;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+              url("images/web2.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.btn, .btn-outline {
+  padding: 12px 26px;
+  margin: 6px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn {
+  background: #c79a5b;
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  color: white;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 12%;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #8b1d3d;
+  margin-bottom: 30px;
+}
+
+/* SERVICES */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* EXPERIENCE */
+.experience {
+  background: #fbe1ea;
+}
+
+.exp-box {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.exp-box h3 {
+  font-size: 40px;
+  color: #8b1d3d;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 18px;
+  transition: 0.4s;
+}
+
+.gallery img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, #8b1d3d, #c79a5b);
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background: #3a0d1f;
+  color: #ffd6e1;
+  text-align: center;
+  padding: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  section { padding: 60px 8%; }
+  .hero-content h1 { font-size: 34px; }
+  .exp-box { flex-direction: column; gap: 30px; }
+}
+
